@@ -23,6 +23,14 @@ header {
   color: #d36c6c;
 }
 
+.navigasi{
+    font-size: 15px;
+}
+
+.navigasi:hover{
+    color: #d36c6c;
+}
+
 nav a {
   margin-left: 35px;
   text-decoration: none;
@@ -39,7 +47,7 @@ nav a {
 }
 
 .hero-text {
-  width: 48%;
+  width: 49%;
 }
 
 .hero-text h1 {
@@ -71,7 +79,7 @@ button:hover {
 
 
 .hero-image {
-  width: 45%;
+  width: 36%;
 }
 
 .hero-image img {
@@ -112,6 +120,11 @@ button:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); 
   width: 300px;
   text-align: left;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }
 
 .card h3 {
