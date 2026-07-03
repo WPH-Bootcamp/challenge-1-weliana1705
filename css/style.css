@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #faf7f2;
   color: #333;
 }
@@ -13,7 +13,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-item: center;
+  align-items: center; /* Diperbaiki dari align-item */
   padding: 30px 80px;
 }
 
@@ -28,6 +28,14 @@ nav a {
   text-decoration: none;
   color: #444;
   font-size: 15px;
+}
+
+/* Tambahan layout untuk memisahkan teks dan gambar agar sejajar */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 80px;
 }
 
 .hero-text {
@@ -61,14 +69,6 @@ button:hover {
   background: #d46f65;
 }
 
-.brands {
-  margin-top: 45px;
-  display: flex;
-  gap: 40px;
-  font-weight: 600;
-  font-size: 22px;
-  color: #555;
-}
 
 .hero-image {
   width: 45%;
@@ -77,19 +77,25 @@ button:hover {
 .hero-image img {
   width: 100%;
   border-radius: 20px;
+  object-fit: cover;
 }
 
-.benefit h2 {
+/* Diperbaiki dari .benefit menjadi .benefits agar sesuai dengan HTML */
+.benefits {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.benefits h2 {
   font-family: 'Playfair Display', serif;
   font-size: 38px;
   margin-bottom: 20px;
 }
 
-.benefit p {
+.benefits p {
   color: #666;
   max-width: 700px;
-  margin: auto;
-  margin-bottom: 45px;
+  margin: 0 auto 45px auto;
 }
 
 .cards {
@@ -102,8 +108,10 @@ button:hover {
   background: white;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  /* Melembutkan shadow agar lebih estetis */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); 
   width: 300px;
+  text-align: left;
 }
 
 .card h3 {
